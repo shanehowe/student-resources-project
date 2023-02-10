@@ -1,0 +1,16 @@
+.posts-container {
+    display: grid;
+  /* Have each grid item only fill one row */
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.notification-section{
+  width: 100vw;
+}
+
+.notification-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Media queries */

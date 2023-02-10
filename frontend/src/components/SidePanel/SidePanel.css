@@ -1,0 +1,38 @@
+.side-panel-container {
+    border: 1px solid black;
+    width: 33%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    height: 77vh;
+    overflow-y: scroll;
+}
+
+pre {
+  background-color: rgb(223, 220, 220);  
+  border-radius: 5px;
+  padding: 0.5rem;
+  white-space: pre-wrap; 
+}
+
+.examples-container {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1.2rem;
+}
+
+.examples {
+    font-weight: bold;
+}
+
+#prompt {
+    line-height: 1.6rem;
+}
+
+/* Media query for 1094px */
+
+@media (max-width: 1094px) {
+    .side-panel-container {
+        width: 40%;
+    }
+}

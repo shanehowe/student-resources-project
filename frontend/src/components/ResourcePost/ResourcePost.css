@@ -1,0 +1,149 @@
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.title-and-button > p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.title-and-button > button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.title-and-button > button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.title-and-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.post-description {
+    padding: 1rem;
+    width: 100%;
+}
+
+.post-description > p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.post-url {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 0;
+
+}
+
+.post-url > p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #015ecc;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+.post-link:visited {
+    color: #015ecc;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.post-user {
+    text-align: center;
+}
+
+#delete-button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 0.5rem;
+}
+
+#delete-button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+#name {
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .post-container {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .post-container {
+        width: 80%;
+        padding: 0 0.5rem;
+    }
+
+    .title-and-button > p {
+        font-size: 1.3rem;
+    }
+
+    .title-and-button > button {
+        font-size: 1rem;
+    }
+
+    .post-description > p {
+        font-size: 1rem;
+    }
+
+    .post-url > p {
+        font-size: 1rem;
+    }
+
+    .post-link {
+        font-size: 0.7rem;
+    }
+}

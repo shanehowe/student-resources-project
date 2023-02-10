@@ -1,0 +1,40 @@
+/* Styles for individual challenge located in pythonchallenges.css for now */
+
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+    .challengePost {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.1rem;
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 0.8rem;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: #000;
+        color: #fff;
+        transition: all 0.4s ease-in-out;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+

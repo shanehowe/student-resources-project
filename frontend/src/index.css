@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* make variables for colors */
+:root {
+  --button-color: #015ecc;
+  --button-hover-color: #fff;
+  --button-hover-text-color: #015ecc;
+  --button-active-color: #0a4aa8;
+  --button-text-color: #fff;
+  --button-border-color: #ccc;
+  --button-border-radius: 5px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* Set all inputs to font size 16 for mobile devices to stop page distorting */
+
+
+
+/* Log in styles */
+
+.log-in-container {
+  height: 100vh;
+  max-width: 100vw;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.log-in-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #000
+}
+
+.log-in-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px
+}
+
+.log-in-container form input {
+  /* put width and height in rem */
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.log-in-container form div {
+  padding: 1rem;
+}
+
+.log-in-container form button {
+  width: 9rem;
+  height: 3rem;
+  border: 1px solid #ccc;
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.log-in-container form button:hover {
+  background-color: var(--button-hover-color);
+  color: var(--button-hover-text-color);
+}
+
+.form-link {
+  color: #000;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+  color: #015ecc;
+}
+
+.sign-up-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sign-up-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #000
+}
+
+.sign-up-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px
+}
+
+.sign-up-container form input {
+  /* put width and height in rem */
+  width: 18rem;
+  height: 2.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.sign-up-container form button {
+  width: 9rem;
+  height: 3rem;
+  border: 1px solid #ccc;
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sign-up-container form button:hover {
+  background-color: var(--button-hover-color);
+  color: var(--button-hover-text-color);
+}
+
+
+/* Media queries*/
+@media (max-width: 600px) {
+  /* Login form  */
+  .log-in-container {
+    overflow-x: hidden;
+  }
+  .log-in-container form {
+    width: 100%;
+    border: none;
+    padding: 0 1rem;
+  }
+
+  .log-in-container form input {
+    width: 100%;
+    
+  }
+
+  .log-in-container form button {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .log-in-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-link {
+    font-size: 0.9rem;
+  }
+
+  /* Sign up form */
+  .sign-up-container form {
+    width: 100%;
+    border: none;
+    padding: 0 0rem;
+  }
+
+  .sign-up-container form input {
+    width: 100%;
+  }
+
+  .sign-up-container form button {
+    padding: 0 1rem;
+  }
+
+  .sign-up-container h2 {
+    font-size: 1rem;
+  }
+
+  .form-link {
+    font-size: 0.9rem;
+  }
+
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)and (max-device-width:1024px) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px !important;
+  }
+  input:focus {
+    outline: none;
+  }
+}
+  

@@ -1,0 +1,19 @@
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.3rem;
+    }
+}

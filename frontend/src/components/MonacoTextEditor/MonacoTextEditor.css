@@ -1,0 +1,40 @@
+/* {"width": "61%", "border": "1px solid red", "float": "right", "borderRadius": "6px", "padding": "0.8rem"} */
+
+.code-editor-container {
+    width: 61%;
+    border: 1px solid black;
+    float: right;
+    border-radius: 6px 6px 0 0;
+    padding: 0.7rem;
+}
+
+
+
+.run-submit-btns > button {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+    margin-right: 7px;
+    margin-bottom: 3px;
+}
+
+.run-submit-btns > button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* Media query for 1094px */
+
+@media (max-width: 1094px) {
+    .code-editor-container {
+        width: 50%;
+    }
+}
+

@@ -1,0 +1,113 @@
+.coding-challenge-container {
+    padding: 2rem;
+}
+
+#back-btn {
+    margin: 10px auto;
+    background-color: #015ecc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.content-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.category {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.category > h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 2fr));
+    grid-template-rows: repeat(auto-fit, minmax(25%, 2fr));
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid red;
+}
+
+.challenge {
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.8rem;
+    position: relative;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.challenge > button {
+    background-color: #015ecc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: fit-content;
+    position: relative;
+    top: 12px;
+    right: 0px;
+    padding: 0.6rem 1.3rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.challenge > button:hover {
+    background-color: #fff;
+    color: #015ecc;
+    border: 1px solid #015ecc;
+    cursor: pointer;
+}
+
+.challenge > p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    .challenge-list-container {
+        grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .challenge-list-container {
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .challenge-list-container {
+        grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .challenge-list-container {
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+        padding: 1rem 0.5rem;
+    }
+}
+
+
+/* NEW FEATURE STYLES  */

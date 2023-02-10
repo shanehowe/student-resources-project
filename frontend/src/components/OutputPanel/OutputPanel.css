@@ -1,0 +1,46 @@
+
+
+.output-panel {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0.7rem;
+    float: right;
+    width: 61%;
+    border-radius: 0 0 6px 6px;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.std-out {
+    width: 95%;
+    min-height: 85%;
+    overflow-y: scroll;
+    border: 1px solid black;
+    font-size: 1.13rem;
+}
+
+.sample-input {
+    width: 60%;
+    min-height: 85%;
+    margin: 0 auto;
+    overflow-y: scroll;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 0.6rem;
+}
+
+.sample-input-container {
+    width: 100%;
+    text-align: center;
+}
+
+/* Media query for 1094px */
+
+@media (max-width: 1094px) {
+    .output-panel {
+        width: 50%;
+    }
+}
+

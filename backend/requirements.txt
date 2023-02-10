@@ -1,0 +1,9 @@
+jose==1.0.0
+python_jose==3.3.0
+fastapi
+python-dotenv
+pydantic[email]
+pymongo
+bcrypt
+requests
+uvicorn
